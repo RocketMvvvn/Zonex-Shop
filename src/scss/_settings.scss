@@ -10,8 +10,10 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
-  background-color: var(--color-white);
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: $primary-color;
+  background-color: $default-color;
 }
 
 img {
@@ -70,10 +72,15 @@ ul {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+  padding: 0 40px;
+
+  // max-width: 1200px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.size-zero {
+  font-size: 0;
 }

@@ -1,0 +1,41 @@
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: $primary-color;
+      transition: width 0.15s;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+        transition: width 0.15s;
+      }
+    }
+
+    &--active {
+      &::before {
+        width: 100%;
+        transition: width 0.15s;
+      }
+    }
+  }
+}
