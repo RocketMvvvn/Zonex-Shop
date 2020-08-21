@@ -1,0 +1,38 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background-color: $neutral-primary;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 300px;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 560px;
+    font-weight: 700;
+    font-size: 72px;
+    color: $primary-color;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 18px;
+    color: $primary-color;
+  }
+
+  &__image {
+    position: absolute;
+    right: 275px;
+    bottom: 0;
+    max-height: 90%;
+  }
+}
