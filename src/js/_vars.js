@@ -3,4 +3,5 @@ export default {
   $document: document,
   $html: document.documentElement,
   $body: document.body,
+  $bannerSlider: document.querySelector('.banner-slider'),
 }
