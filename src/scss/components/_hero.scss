@@ -1,11 +1,13 @@
 .hero {
   position: relative;
   height: 100vh;
+  height: 1080px;
   min-height: 700px;
   background-color: $neutral-primary;
 
   &__container {
     position: relative;
+    padding: 0;
     height: 100%;
   }
 
@@ -34,7 +36,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 260px;
+    padding: 0 290px;
     height: 100%;
   }
 }
@@ -79,5 +81,72 @@
       background-color: $default-color;
       transform: translate(-50%, -50%);
     }
+  }
+}
+
+.marketing {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  z-index: 10;
+  display: flex;
+  padding: 10px;
+  width: 280px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  background-color: $default-color;
+  transform: translateX(-150vw);
+  transition: transform 0.3s;
+
+  &--visible {
+    transform: translateX(0);
+    transition: transform 0.3s;
+  }
+
+  &__image {
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__descr {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 11px;
+    color: $neutral-regular;
+  }
+
+  &__title {
+    margin: 7px 0;
+    min-width: 34px;
+    font-size: 15px;
+  }
+
+  &__when-from {
+    display: block;
+    font-family: "Jost-Italic";
+    font-weight: 400;
+    font-size: 11px;
+    color: $neutral-regular;
+  }
+
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/close.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
