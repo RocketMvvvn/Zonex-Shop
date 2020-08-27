@@ -1,0 +1,43 @@
+.main-products {
+  &__container {
+    padding-top: 77px;
+    padding-bottom: 30px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 43px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
+
+  &__btn {
+    font-size: 24px;
+    color: $neutral-regular;
+
+    &--active {
+      color: $primary-color;
+
+      &::before {
+        width: 100%;
+        transition: width 0.15s;
+      }
+    }
+  }
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.product {
+  position: relative;
+  font-size: 13px;
+
+  &__image {
+    margin-bottom: 20px;
+
+    img {
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    color: $neutral-secondary;
+
+    a {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    color: $primary-color;
+  }
+}
