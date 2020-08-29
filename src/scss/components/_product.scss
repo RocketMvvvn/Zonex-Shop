@@ -31,5 +31,10 @@
   &__price {
     font-weight: 700;
     color: $primary-color;
+
+    strike {
+      font-weight: 500;
+      color: $neutral-third;
+    }
   }
 }
