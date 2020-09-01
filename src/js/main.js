@@ -1,5 +1,6 @@
 import './vendor/focus-visible.min.js';
 import './components/main-slider';
+import './components/catalog-slider';
 import './components/marketing';
 import {resizeContent} from './functions/resize';
 import {scrollTo} from './functions/smooth-scroll';
